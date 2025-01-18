@@ -1,0 +1,299 @@
+    /* Basic Styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        background: #111827;
+        color: #E2E8F0;
+        line-height: 1.6;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* Header */
+    header {
+        padding: 20px 0;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        background-color: rgba(17, 24, 39, 0.9);
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+        margin: 0;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    header h1:hover {
+        transform: scale(1.05);
+    }
+
+    header p {
+        margin: 0;
+        font-size: 0.9em;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 30px;
+    }
+
+    nav a {
+        color: #E2E8F0;
+        text-decoration: none;
+        transition: color 0.3s ease, transform 0.2s ease;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    nav a:hover {
+        color: #14B8A6;
+        transform: scale(1.1);
+        background-color: rgba(20, 184, 166, 0.1);
+    }
+
+    /* Hero Section */
+    #hero {
+        text-align: center;
+        padding: 150px 0 100px;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: fadeIn 1s ease-out;
+    }
+
+    #hero img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #hero img:hover {
+        transform: scale(1.1);
+    }
+
+    #hero h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+
+    #hero p {
+        font-size: 1.1em;
+        max-width: 700px;
+        margin: 0 auto 30px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        padding: 15px 30px;
+        margin: 20px;
+
+        background-color: #00ADB5;
+        color: #222831;
+        text-decoration: none;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        font-weight: 600;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+        background-color: #008f95;
+    }
+.details-container{
+    display: flex;
+        flex-direction: column; /* Default layout: row */
+        justify-content: space-between; /* Space between items */
+        align-items: center; /* Center items vertically */
+        width: 80%;
+        padding: 20px;
+
+}
+
+    
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+        header .container {
+            flex-direction: column; /* Stack header elements */
+            align-items: flex-start; /* Align to the left */
+        }
+        nav ul {
+            flex-direction: column; /* Stack nav items */
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav li {
+            margin: 5px 0; /* Adjust spacing for stacked items */
+        }
+        #hero {
+            padding: 100px 0;
+        }
+    }
+
+    --------------------------------------
+    /* ... (Previous CSS styles) ... */
+
+/* Skills Section */
+#skills {
+padding: 80px 0;
+background-color: #1F2937; /* Slightly lighter background */
+}
+
+#skills h2 {
+text-align: center;
+margin-bottom: 40px;
+font-size: 2em;
+}
+
+.skills-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+grid-gap: 30px;
+}
+
+.skill-item {
+background-color: #283040; /* Darker background for skill items */
+padding: 30px;
+border-radius: 8px;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-item:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+font-size: 3em;
+margin-bottom: 20px;
+color: #00ADB5; /* Teal icon color */
+transition: transform 0.3s ease;
+}
+.skill-item:hover .skill-icon{
+transform: rotate(360deg);
+}
+
+.skill-item h3 {
+margin-bottom: 15px;
+}
+
+.skill-item p {
+line-height: 1.5;
+text-align: justify;
+}
+    /* Footer Styles */
+footer {
+background-color: #05204fe2;
+color: #b00fb8;
+padding: 20px 0;
+margin-top: 50px;
+text-align: center; /* Default text alignment */
+}
+
+.footer-content {
+display: flex;
+justify-content: space-between; /* Distribute space between footer elements */
+align-items: center; /* Vertically align items */
+flex-wrap: wrap; /* Allow wrapping on small screens */
+max-width: 1200px; /* Match container width */
+margin: 0 auto;
+padding: 0 20px; /* Add some side padding */
+}
+
+.footer-links {
+list-style: none;
+padding: 0;
+margin: 0;
+display: flex;
+}
+
+.footer-links li {
+margin: 0 15px; /* Increased spacing */
+}
+
+.footer-links a {
+color: #38af14;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+color: #00ADB5; /* Teal hover color */
+}
+
+.footer-social {
+display: flex; /* Use flexbox for social icons */
+align-items: center; /* Vertically align icons */
+}
+
+.footer-social a {
+display: inline-flex; /* Use inline-flex for better alignment */
+margin: 0 10px;
+text-decoration: none;
+color: #EEEEEE;
+transition: color 0.3s ease, transform 0.2s ease; /* Add transform transition */
+}
+
+.footer-social a:hover {
+color: #00ADB5;
+transform: scale(1.1); /* Scale on hover */
+}
+
+.footer-social i {
+font-size: 1.5rem;
+}
+
+/* Media Query for Footer Responsiveness */
+@media (max-width: 768px) {
+.footer-content {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    text-align: center; /* Center text within footer */
+}
+
+.footer-links {
+    flex-direction: column; /* Stack links vertically */
+    margin-top: 10px;
+}
+
+.footer-links li {
+    margin: 5px 0; /* Adjust spacing for stacked links */
+}
+.footer-social{
+    margin-top: 10px;
+}
+}
