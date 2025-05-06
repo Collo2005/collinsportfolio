@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collins Muriithi Mwaniki | Web & AI Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+     <header>
+        <div class="container">
+            <div>
+                <h1 onclick="window.location.href='#home'" style="cursor: pointer;">Collins Muriithi Mwaniki</h1>
+                <p>Tech freelancer & AI Enthusiast</p>
+            </div>
+        </div>
+    </header>
+
+    <header>
+        <div class="container">
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link active">Work</a>
+                    <a href="#" class="nav-link">Skills</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="hero">
+        <div class="container">
+            <img src="my profile.jpg" alt="Collins Muriithi Mwaniki">
+            <h2>Crafting Digital Experiences</h2>
+            <p>I build innovative and user-friendly web applications using the latest technologies. Specializing in front-end and back-end development, I bring ideas to life with clean, efficient code. My passion extends to exploring and implementing AI solutions to empower communities and drive positive change.</p>
+
+
+            <div class="details-container">
+
+                <a href="About me.html"  class="cta-button">About 😎me</a>
+
+                
+
+                <a href="conatct me page.html" class="cta-button">Get in Contact</a>
+            
+            <a href="#portfolio" class="cta-button">View My Work</a>
+
+            <a href="#portfolio" class="cta-button">Portfolio<br></a>
+        </div>
+            
+
+    </section>
+
+
+<section>
+</div>
+
+<div id="skills" class="fade-in">
+    <div class="container">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+
+            <div class="skill-item">
+                <i class="fab fa-html5 skill-icon"></i>
+                <h3>HTML</h3>
+                <p>I build semantic and accessible HTML structures, forming the foundation of user-friendly websites. My proficiency ensures well-organized content, optimized for search engines and diverse browsing experiences.</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <h3>CSS</h3>
+                <p>I craft visually appealing and responsive designs using CSS. My expertise allows me to create layouts that adapt seamlessly to various screen sizes, enhancing user experience and brand consistency across devices.</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fab fa-js-square skill-icon"></i>
+                <h3>JavaScript</h3>
+                <p>I add interactivity and dynamic functionality to websites with JavaScript. From user interface enhancements to complex web applications, I can create engaging and responsive user experiences.</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fas fa-edit skill-icon"></i>
+                <h3>Copywriting</h3>
+                <p>I write compelling and persuasive copy that connects with target audiences. My copywriting skills help businesses communicate their value proposition effectively, driving engagement and conversions.</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-user-tie skill-icon"></i>
+                <h3>Freelancing</h3>
+                <p>I offer freelance services, providing businesses with tailored web solutions and digital marketing strategies. I'm adept at collaborating with clients, understanding their needs, and delivering high-quality results within deadlines.</p>
+            </div>
+
+            <div class="skill-item">
+                <i class="fas fa-robot skill-icon"></i>
+                <h3>AI Engineering</h3>
+                <p>I develop AI-powered solutions to solve complex problems and drive innovation. My experience includes machine learning model development, data analysis, and AI application integration, focusing on creating practical and impactful solutions.</p>
+            </div>
+
+        </div>
+</section>
+   
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Collins Muriithi Mwaniki. All rights reserved.</p>
+                <nav>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+            </div>
+        </footer>
+        <script>document.querySelector(".mobile-menu-btn").addEventListener("click", function() {
+            let menu = document.querySelector(".nav-links");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        });</script>
+</body>
+  </html>
+
+
+
+    

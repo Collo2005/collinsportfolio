@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #111827;
+            color: #E2E8F0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #4B5563;
+            background-color: #1F2937;
+            color: #E2E8F0;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #14B8A6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0d9488;
+        }
+
+        .email-link {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icon {
+            width: 32px;
+            height: 32px;
+        }
+        .social-container {
+            display: inline-flexbox;
+            flex-direction:row ; /* Default layout: row */
+            justify-content: center; /* Space between items */
+            align-items: center; /* Center items vertically */
+            width: 80%;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sweet, that's me! Now it's your turn to say hi.</h1>
+
+        <form action="YOUR_FORMSPREE_URL" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Get in Touch</button>
+        </form>
+
+        <div class="email-link">
+            or email him at <a href="mailto:<collinsmuriithi731@gmail.com>">hi>>collinsmuriithi731@gmail.com</a>
+        </div>
+<div class="social-container">
+    <div class="social-links">
+        <a href="https://wa.me/message/YGAHP3TO2V65C1" target="_blank" aria-label="WhatsApp">
+            <img src="logos/whatsapp_logo.png" alt="WhatsApp" class="social-icon">
+        </a>
+        <a href="YOUR_FACEBOOK_LINK" target="_blank" aria-label="Facebook">
+            <img src="logos/facebook_logo.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://t.me/Collosteel"target="_blank" aria-label="Telegram">
+            <img src="logos/telegram_logo.png" alt="Telegram" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/alpha_digital_marketers" target="_blank" aria-label="Instagram">
+            <img src="logos/instagram_logo.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://x.com/Mur13711Collins?t=71FA-a9TrTP1KOtsLK4Nlw&s=09" target="_blank" aria-label="X (formerly Twitter)">
+            <img src="logos/x_logo.png" alt="X (formerly Twitter)" class="social-icon">
+        </a>
+        <a href="https://www.tiktok.com/@collins.muriithi" target="_blank" aria-label="Tiktok">
+            <img src="logos/tiktok.png" alt="Tiktok" class="social-icon">
+        </a>
+    </div>
+</div>
+        
+    </div>
+</body>
+</html>
